@@ -1,0 +1,8 @@
+OM4_SIS2_cgrid_05
+1900 1 1 0 0 0
+"ocean_hour", 6, "hours",   1, "days", "time"
+"ocean_model","SST","SST","ocean_hour","all","mean","none",2
+#"ocean_model","surface_stokes_y","surface_stokes_y","ocean_hour","all","mean","none",2
+#"ocean_model","surface_stokes_x","surface_stokes_x","ocean_hour","all","mean","none",2
+"ocean_model","3d_stokes_x","3d_stokes_x","ocean_hour","all","mean","none",2
+"ocean_model","3d_stokes_y","3d_stokes_y","ocean_hour","all","mean","none",2
