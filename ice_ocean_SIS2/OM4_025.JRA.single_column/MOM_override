@@ -1,11 +1,14 @@
 ! Blank file in which we can put "overrides" for parameters
-#override PRANDTL_TURB = 1.0
 REENTRANT_Y = True
 REENTRANT_X = True
-! Use GOTM
-!#override ENERGETICS_SFC_PBL = False
-!#override USE_JACKSON_PARAM = False
-!#override USE_GOTM = True
+!Overrides to shortwave to make model work
+#override VAR_PEN_SW = False
+#override PEN_SW_FRAC = 1.0
+#override EXP_OPACITY_SCHEME = "DOUBLE_EXP"
+#override PEN_SW_NBANDS = 2
+#override PEN_SW_SCALE = 0.35
+#override PEN_SW_SCALE_2ND = 23.0
+#override SW_1ST_EXP_RATIO = 0.58
 ! Use KPP
 !#override ENERGETICS_SFC_PBL = False
 !#override USE_JACKSON_PARAM = False
@@ -47,13 +50,6 @@ REENTRANT_X = True
 !MIX_LEN_EXPONENT = 2.0
 !!!!!!!!
 !#override KD = 5.e-4
-#override VAR_PEN_SW = False
-#override PEN_SW_FRAC = 1.0
-#override EXP_OPACITY_SCHEME = "DOUBLE_EXP"
-#override PEN_SW_NBANDS = 2
-#override PEN_SW_SCALE = 0.35
-#override PEN_SW_SCALE_2ND = 23.0
-#override SW_1ST_EXP_RATIO = 0.58
 !#override RESOLN_SCALED_KH = False
 !#override RESOLN_SCALED_KHTH = False
 !#override HENYEY_IGW_BACKGROUND = False
