@@ -1,0 +1,6 @@
+#!/bin/tcsh
+#
+
+module load fre/bronx-21
+
+make_solo_mosaic --num_tiles 1 --dir ./ --mosaic_name ocean_mosaic --tile_file Med_hgrid.nc
